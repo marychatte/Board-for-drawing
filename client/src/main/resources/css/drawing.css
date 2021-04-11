@@ -1,0 +1,135 @@
+:root {
+    --gradient: linear-gradient(45deg, #57b3ffba 33%, #b04eff 66%, #e2abff);
+}
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.contain-text {
+    text-align: center;
+    font-family: Courier New, monospace;
+    font-weight: 600;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#name {
+    overflow: auto;
+    margin: 0;
+    background: var(--gradient);
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: Courier New, monospace;
+    color: white;
+}
+
+div {
+    margin-top: 1rem;
+}
+
+#color {
+    cursor: pointer;
+    outline: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: white;
+    border: none;
+    -webkit-appearance: none;
+    width: 3.5rem;
+    height: 20px;
+}
+
+#color::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+
+#range {
+    cursor: move;
+    outline: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 16rem;
+    -webkit-appearance: none;
+}
+
+#range::-webkit-slider-runnable-track {
+    height: 10px;
+    background: linear-gradient(45deg, #e2abff 33%, #d09fed 66%, #e2abff);
+    border-radius: 3rem;
+}
+
+#range::-webkit-slider-thumb {
+    border: 1px solid #d09fed;
+    height: 16px;
+    width: 16px;
+    border-radius: 30px;
+    background: white;
+    -webkit-appearance: none;
+    margin-top: -3px;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 2rem;
+    width: 8rem;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+}
+
+.button-right {
+    float: right;
+}
+
+#button-close {
+    width: 95%;
+}
+
+canvas {
+    overflow: auto;
+    display: block;
+    margin: 1rem auto 0.5rem;
+    width: 98.5%;
+    height: 75%;
+    imageSmoothingEnable: false;
+    image-rendering: pixelated;
+}
+
+.image {
+    outline: none;
+    position-alignment: center;
+    justify-content: center;
+    height: 6rem;
+    margin: 1rem 0.5rem;
+}
+
+.colour-board {
+    border: solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+}
+
+.blue-board {
+    border: 2px solid #57b3ffba;
+    border-radius: 4px;
+}
+
+
+#gallery {
+    height: 80%;
+    width: 85%;
+    margin: 3% auto auto;
+    overflow: auto;
+    text-align: center
+}

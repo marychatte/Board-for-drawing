@@ -1,5 +1,5 @@
 ## Board for drawing
-###You can:
+### You can:
 * use brash or eraser
 * change colour of brush
 * change size of brush or eraser
@@ -7,7 +7,7 @@
 * save picture in common gallery
 * see all pictures in gallery
 
-###Run
+### Run
 Download <code>server-0.1.1.zip</code> and extract it. \
 If your system is Windows run <code>server-0.1.1\bin\server.bat</code> \
 Else run <code>server-0.1.1\bin\server</code> \
